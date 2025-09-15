@@ -798,6 +798,7 @@ const ExcalidrawWrapper = () => {
       })}
     >
       <Excalidraw
+        validateEmbeddable={() => true}
         excalidrawAPI={excalidrawRefCallback}
         onChange={onChange}
         initialData={initialStatePromiseRef.current.promise}
